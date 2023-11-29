@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pencarian {
+    text-align: center;
+    margin-top: 20px;
+}
+    .kebawah {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: kelas-namas 2s forwards;
+}
+    @keyframes kelas-namas {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  
+  .muncul {
+    opacity: 0;
+    animation: fadeInUp 5s forwards;
+}
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+      }
+    }
+    
+  .kekanan {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInUp 3s forwards;
+}
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .kekiri {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInUp 3s forwards;
+}
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .keatas {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeInUp 1.5s forwards;
+}
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .keatass {
+    opacity: 0;
+    transform: translateY(300px);
+    animation: fadeInUp 1.5s forwards;
+}
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .info-kelas {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .nama-kelas {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .deskripsi-kelas {
+      font-family: Sans-Serif;
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+    
+    .link-kelas {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .wali {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .kartu-murid {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: card 1.5s;
+  }
+  
+  .photo-murid {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .nama-murid {
+    margin-top: 10px;
+  }
+  
+  .nama-murid:hover {
+    margin-top: 10px;
+  }
+  
+  .cita {
+    opacity: 0;
+  }
+  
+  .cita:hover {
+    opacity: 1;
+  }
